@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Web Application</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div th:if="${message != null and #strings.length(message) > 0}" class="flash-message" th:text="${message}"></div>
+    <div class="container">
+        <h1>Welcome to My Java Web App</h1>
+        <p>This simple web application was written entirely in Java. It will save to a H2 database every message a user enters below and display it as a Flash message. Give it try!</p>
+        <br>
+        <br>
+        <form action="/" method="post">
+            <input type="text" name="message" placeholder="Enter your message">
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <br>
+        <img src="https://picsum.photos/200" alt="Random Image">
+    </div>
+    <footer>
+        <small>© 2023 Professor L </small>
+    </footer>
+</body>
+</html>
+

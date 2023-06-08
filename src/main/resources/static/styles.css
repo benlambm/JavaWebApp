@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.flash-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ffcccc;
+    color: red;
+    font-weight: bold;
+    padding: 1em 0;
+    margin-bottom: 2em;
+    border: 1px solid #990000;
+    z-index: 1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1em;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+form input {
+    margin-bottom: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #008CBA; /* Blue color */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #007B9A; /* Darker blue color on hover */
+}
+
+img {
+    /* align image to be centered horizontally */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 2em;
+}
